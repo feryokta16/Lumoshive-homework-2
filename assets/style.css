@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* * {
+  padding: 0;
+  margin: 0;
+} */
+:root {
+  --bg-green: #d3ded2;
+  --bg-green-secondary: #e5ece4;
+  --secondary-font: #9192a6;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Urbanist", sans-serif;
+}
+.container {
+  background-color: var(--bg-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* padding: 10px 15px; */
+}
+
+.card {
+  background-color: var(--bg-green-secondary);
+  padding: 2rem;
+  width: 300px;
+  height: 65vh;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .text {
+  margin: 30px 0;
+  font-weight: 600;
+  font-size: 20px;
+  font-style: italic;
+}
+.container .card .author {
+  margin-top: 30px;
+  font-weight: bold;
+}
+.container .card .tag {
+  color: var(--secondary-font);
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: var(--bg-green);
+  border: none;
+  border-radius: 19px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 12px 40px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+hr {
+  border: 0; /* Menghapus border default */
+  height: 4px; /* Mengatur ketebalan */
+  background-color: black; /* Warna garis */
+  margin: 30px 0; /* Margin atas dan bawah */
+}
+
+@media (max-width: 576px) {
+  .container {
+  }
+  .card {
+    width: 85vh;
+    height: 90vh;
+    border-radius: 35px;
+  }
+  .card .text {
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 100px;
+  }
+  .container .card .tag,
+  .container .card .author {
+    padding-left: 20px;
+  }
+}
