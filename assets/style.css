@@ -60,10 +60,10 @@ body {
   font-weight: bold;
 }
 hr {
-  border: 0; /* Menghapus border default */
-  height: 4px; /* Mengatur ketebalan */
-  background-color: black; /* Warna garis */
-  margin: 30px 0; /* Margin atas dan bawah */
+  border: 0; 
+  height: 4px; 
+  background-color: black; 
+  margin: 30px 0; 
 }
 
 @media (max-width: 576px) {
